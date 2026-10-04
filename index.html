@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff477e" />
+  <title>Milan ❤️ Khushi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="brand" href="#home">M <span>❤</span> K</a>
+      <div class="nav-links">
+        <a href="#story">Us</a><a href="#reasons">Why You</a><a href="#quiz">Quiz</a><a href="#proposal">Big Question</a>
+      </div>
+    </nav>
+    <div class="hero-slider">
+      <article class="slide active"><div class="glass hero-card">
+        <p class="eyebrow">A little website, only for you</p>
+        <h1>Milan <span>❤️</span> Khushi</h1>
+        <p class="script">Some people meet by chance. Some become a whole story.</p>
+        <p class="hero-copy">And if you're reading this, Khushi… welcome to my favourite chapter. 💗</p>
+        <div class="hero-actions"><a class="btn primary" href="#story">Open My Heart</a><button class="btn ghost" id="surpriseBtn">Tap for a Surprise ✨</button></div>
+      </div></article>
+      <article class="slide"><div class="glass hero-card">
+        <p class="eyebrow">One tiny truth</p><h2>You make ordinary days feel special.</h2>
+        <p class="hero-copy">Your smile, your drama, your cute anger, your care — I somehow want all of it.</p>
+        <a class="btn primary" href="#reasons">See Why I Love You</a>
+      </div></article>
+      <article class="slide"><div class="glass hero-card">
+        <p class="eyebrow">Warning ⚠️</p><h2>This page contains dangerously high levels of love.</h2>
+        <p class="hero-copy">Side effects may include smiling at the screen and missing Milan a little more. 😌</p>
+        <a class="btn primary" href="#quiz">Take the Love Test</a>
+      </div></article>
+      <div class="dots" aria-label="Slider controls"><button class="dot active" data-slide="0"></button><button class="dot" data-slide="1"></button><button class="dot" data-slide="2"></button></div>
+    </div>
+    <div class="scroll-hint">scroll for us ↓</div>
+  </header>
+
+  <main>
+    <section class="section" id="story">
+      <p class="section-tag">OUR LITTLE UNIVERSE</p>
+      <h2>For the girl who makes my heart feel at home.</h2>
+      <div class="story-grid">
+        <div class="love-card tilt"><div class="emoji">🌷</div><h3>Your Smile</h3><p>It has a very unfair superpower: one smile and suddenly my mood becomes better.</p></div>
+        <div class="love-card tilt"><div class="emoji">🤍</div><h3>Your Heart</h3><p>I don't just love how you look. I love how you care, how you feel, and how you stay.</p></div>
+        <div class="love-card tilt"><div class="emoji">✨</div><h3>Your Chaos</h3><p>Even your funny mood swings are part of the package I secretly signed up for forever.</p></div>
+      </div>
+    </section>
+
+    <section class="section darker" id="reasons">
+      <p class="section-tag">WHY YOU?</p><h2>Because “perfect” was never the point. You were.</h2>
+      <div class="reasons">
+        <div class="reason"><span>01</span><p>You feel like comfort after a long day.</p></div>
+        <div class="reason"><span>02</span><p>You make simple conversations feel important.</p></div>
+        <div class="reason"><span>03</span><p>I can tease you and still want to protect your smile.</p></div>
+        <div class="reason"><span>04</span><p>When I imagine “us”, the future feels a little prettier.</p></div>
+      </div>
+      <div class="quote glass"><p>“In every version of my favourite day, somehow you are there.”</p><small>— Milan, obviously 😌❤️</small></div>
+    </section>
+
+    <section class="section" id="quiz">
+      <p class="section-tag">KHUSHI'S VERY SERIOUS LOVE TEST 😏</p><h2>Answer carefully. Milan is watching. 😂</h2>
+      <div class="quiz-card glass" id="quizCard">
+        <p class="question-count" id="questionCount">Question 1 of 4</p>
+        <h3 id="questionText">Who is the cutest person in this relationship?</h3>
+        <div class="answers" id="answers"></div><p class="quiz-response" id="quizResponse"></p>
+      </div>
+    </section>
+
+    <section class="section proposal-section" id="proposal">
+      <div class="proposal-glow"></div>
+      <div class="proposal-card glass">
+        <p class="section-tag">ONE LAST QUESTION…</p><h2>Khushi, will you marry me? 💍</h2>
+        <p>Choose wisely. One button is emotionally stable. The other one has commitment issues. 😌</p>
+        <div class="proposal-actions" id="proposalArea"><button id="yesBtn" class="btn yes">YES! ❤️</button><button id="noBtn" class="btn no">No 🙈</button></div>
+        <p class="no-hint" id="noHint">Try pressing “No”… if you can 😏</p>
+      </div>
+    </section>
+
+    <section class="final-note"><div class="final-heart">❤</div><p>If this little website made you smile, then it already did what I wanted.</p><h2>Yours, with extra love — Milan</h2><small>Made for Khushi, not for the whole internet. 🌙</small></section>
+  </main>
+
+  <div class="modal" id="loveModal" aria-hidden="true"><div class="modal-card glass"><button class="modal-close" id="modalClose">×</button><div class="big-heart">❤️</div><h2 id="modalTitle">Surprise!</h2><p id="modalText">If I had to choose again, I'd still choose you.</p></div></div>
+  <canvas id="confetti"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
